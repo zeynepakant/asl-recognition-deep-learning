@@ -4,7 +4,7 @@ The goal of this project is to classify images in order to identify sign languag
 ## Preprocessing
 Firstly, we have done label conversion. Starting from ‘A’ we have mapped every letter to an integer value. For example, ‘A’ corresponds to 0 and ‘Z’ corresponds to  25. Similarly, ‘del’ is 26, ‘nothing’ is 27 and ‘space’ is 28. After mapping, we did one-hot encoding on labels to make them categorical.
 
-In order to keep image and data size reasonable and efficient, we have resized images as 64*64*3. We normalized our pixel values by dividing them by 255.
+In order to keep image and data size reasonable and efficient, we have resized images as 64x64x3. We normalized our pixel values by dividing them by 255.
 
 We have tried many approaches. One of them was putting images into grayscale. However, when we have trained our model, test accuracy is reduced compared to colorful images. Hence, we eliminated this approach, namely, we decided to train our model with the images as they are given in terms of coloring. 
 
