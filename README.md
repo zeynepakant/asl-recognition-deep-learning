@@ -16,7 +16,7 @@ We have splitted the training data as 80% training and 20% validation in order t
 ## Data Augmentation
 Data augmentation is an approach for obtaining more data from the data we already have by rotating and randomly zooming them. Since using a large dataset is a way to prevent overfitting and underfitting, we followed this approach. We have applied the ImageDataGenerator function to our datasets. For example, we have rotated images by 10 degrees and zoomed with the value of 0.1, and obtained new images. In addition, we decided not to flip the images, because it would cause changing the meaning of the sign. Our batch size is 32, which means we gave 32 samples in each iteration. This is done due to memory limitations.
 
-## Preprocess on test data 
+## Preprocessing Test Data 
 Before doing predictions on the test data set, we have applied the preprocessing operation by normalizing the inputs and resizing the images as 64*64*3. Also, after predicting the labels, we have converted one-hot code correspondence of the letters back.
 
 
