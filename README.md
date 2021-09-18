@@ -1,5 +1,5 @@
 ## Problem 
-The goal of this project is to classify images in order to identify sign language letters. The input size is 200*200*3 and the images are colorful. 3 represents the RGB values. Data includes a total of 29.000 images as Training and Test Datasets.
+The goal of this project is to classify images in order to identify sign language letters. The input size is 200x200x3 and the images are colorful. 3 represents the RGB values. Data includes a total of 29.000 images as Training and Test Datasets.
 
 ## Preprocessing
 Firstly, we have done label conversion. Starting from ‘A’ we have mapped every letter to an integer value. For example, ‘A’ corresponds to 0 and ‘Z’ corresponds to  25. Similarly, ‘del’ is 26, ‘nothing’ is 27 and ‘space’ is 28. After mapping, we did one-hot encoding on labels to make them categorical.
